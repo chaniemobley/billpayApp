@@ -7,7 +7,7 @@ $(document).ready(function () {
         $.each(data.bills, function (index, value) {
 
             $(mainBillList).append(
-                "<li><span class='bName'>" + value.billname + "</span><span class='dDate'>due " + value.duedate + "</span><span class='bAmount'>$" + value.amount +
+                "<li><span class='bName'>" + bill.billname + "</span><span class='bAmount'>$" + bill.amount +
                     "</span></li>"
             );
 
@@ -22,8 +22,8 @@ $(document).ready(function () {
             $.each(localData.bills, function (index, value) {
 
                 $(mainBillList).append(
-                    "<li><span class='bName'>" + value.billname  + "</span><span class='bAmount'>$" + value.amount +
-                        "</span>" + "</span><span class='dDate'>" + value.duedate + "</li>"
+                    "<li><span class='bName'>" + bill.billname + "</span><span class='bAmount'>$" + bill.amount +
+                        "</span></li>"
                 );
 
             });
