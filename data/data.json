@@ -1,0 +1,14 @@
+{
+
+    "bills": [
+
+        {   "billname"   : "Credit Card", "duedate" : "March 9",         "amount"    : "123"        },
+        {   "billname"   : "Hulu",  "duedate" : "March 9",        "amount"    : "10"        },
+        {   "billname"   : "Electric", "duedate" : "March 9",         "amount"    : "68"        },
+        {   "billname"   : "Credit Card", "duedate" : "March 9",         "amount"    : "123"        },
+        {   "billname"   : "Hulu",  "duedate" : "March 9",        "amount"    : "10"        },
+        {   "billname"   : "Electric", "duedate" : "March 9",         "amount"    : "68"        }
+
+    ]
+
+}
