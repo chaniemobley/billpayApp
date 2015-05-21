@@ -72,12 +72,12 @@ function setBindings(){
 
             $("#" + currentView).animate({
                 left: "100%"
-            }, 1000, function() {
+            }, 200, function() {
                 currentView = nextView;
             });
             $( "#" + nextView).animate({
                 left: "0"
-            }, 1000, function() {
+            }, 200, function() {
                 // Animation complete.
             });
         }
