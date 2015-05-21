@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.chaniemobley.bills"
+        versionCode = "10"
+        version     = "1.0.0" >
+
+    <preference name="phonegap-version" value="3.7.0" />
+
+    <name>Pay Your Darn Bills</name>
+
+    <description>
+        You're a busy person. We get it. Sometimes there's just too much going on, and despite your best efforts you forget something important from time to time- like paying a bill. So we created an app to help you keep your life a little more together.
+    </description>
+
+    <author href="http://chaniemobley.com" email="chaniemobley@gmail.com">
+        Chanie Mobley
+    </author>
+    <icon src="images/512.png" />
+
+
+
+</widget>

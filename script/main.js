@@ -53,7 +53,7 @@ function loadBills() {
 
     if (bills.length > 0) {
         bills.forEach(function (bill) {
-            $(mainBillList).append("<li><span class='bName'>" + bill.billname + "</span><span class='dDate'>" + bill.duedate + "</span><span class='bAmount'>$" + bill.amount +
+            $(mainBillList).append("<li><span class='bName'>" + bill.billname + "</span><span class='bAmount'>$" + bill.amount +
                 "</span></li>");
         });
     } else {
