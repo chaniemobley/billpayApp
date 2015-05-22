@@ -166,4 +166,49 @@ header {
         right: 10px;
         font-weight: 700; }
 
+#contactView #contactContent .col1 {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box; }
+#contactView #contactContent .col2 {
+  width: 50%;
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  font-weight: 300; }
+  #contactView #contactContent .col2 .formGroup {
+    padding: 10px; }
+  #contactView #contactContent .col2 label {
+    display: block;
+    margin-right: 10px;
+    width: 30%; }
+  #contactView #contactContent .col2 input {
+    font-size: .9em;
+    border-radius: 5px;
+    width: 90%;
+    color: #273c41;
+    border: none; }
+  #contactView #contactContent .col2 textarea {
+    font-size: .9em;
+    border-radius: 5px;
+    width: 90%;
+    color: #273c41;
+    border: none;
+    min-height: 50px; }
+  #contactView #contactContent .col2 button {
+    background-color: #e9e9dd;
+    color: #273c41;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: .6em;
+    border: none;
+    border-radius: 5px; }
+
+@media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
+  #contactView #contactContent .col1, #contactView #contactContent .col2 {
+    width: 100%;
+    float: none; } }
+
 /*# sourceMappingURL=style.css.map */

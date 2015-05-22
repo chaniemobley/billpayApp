@@ -216,7 +216,63 @@ header {
     }
   }
 }
-
+#contactView{
+  #contactContent{
+    .col1{
+      width: 50%;
+      float: left;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .col2{
+      width: 50%;
+      float:right;
+      padding: 20px;
+      box-sizing: border-box;
+      font-size: 1.5em;
+      font-weight: 300;
+      .formGroup {
+        padding: 10px;
+      }
+      label {
+        display: block;
+        margin-right: 10px;
+        width: 30%;
+      }
+      input {
+        font-size: .9em;
+        border-radius: 5px;
+        width: 90%;
+        color: $darkblue;
+        border: none;
+      }
+      textarea{
+        font-size: .9em;
+        border-radius: 5px;
+        width: 90%;
+        color: $darkblue;
+        border: none;
+        min-height: 50px;
+      }
+      button{
+        background-color: $offwhite;
+        color: $darkblue;
+        padding: 5px 10px;
+        font-weight: 700;
+        font-size: .6em;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
-
+  #contactView{
+    #contactContent{
+      .col1, .col2{
+        width: 100%;
+        float: none;
+      }
+    }
+  }
 }
