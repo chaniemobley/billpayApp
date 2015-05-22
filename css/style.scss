@@ -13,17 +13,20 @@ $overdue: #cd8583;
     clear: both;
   }
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
 }
-html{
+
+html {
   height: 100%; //fallback for older browsers
   height: 100vh;
   overflow: hidden;
 
 }
-body{
+
+body {
   font-family: 'Oswald', sans-serif;
   background-color: $darkgreen;
   color: $darkblue;
@@ -32,7 +35,8 @@ body{
   height: 100vh;
   overflow: hidden;
 }
-header{
+
+header {
   background-color: $offwhite;
   color: $darkblue;
   left: 0;
@@ -41,29 +45,31 @@ header{
   position: absolute;
   z-index: 99;
   padding: 20px;
-  nav{
+  nav {
     margin: auto;
     text-align: center;
     display: table;
     @include clearfix;
-    ul li{
-      width: 33.333333%;
+    ul li {
+      width: 25%;
       list-style: none;
       display: table-cell;
       text-align: center;
-      padding: 0 5%;
-      i{
+      padding: 0 10%;
+      i {
         color: $darkblue;
         font-size: 250%;
       }
     }
   }
 }
-.imgResponsive{
+
+.imgResponsive {
   width: 100%;
   height: auto;
 }
-.view{
+
+.view {
   position: fixed;
   height: 100%;
   height: 100vh;
@@ -76,73 +82,141 @@ header{
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 0 0 10px;
+  padding: 0 0 90px;
+  h1 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
 }
-.activeView{
+
+.activeView {
   left: 0;
 }
-#homeView{
-  .billList{
+
+#homeView {
+  .billList {
     list-style: none;
     width: 100%;
-    overflow:scroll;
-    li{
+    overflow: scroll;
+    li {
       background-color: $lightgreen;
       padding: 20px 10px 10px;
       min-height: 75px;
-      .overdue{
+      .overdue {
         background-color: $overdue;
       }
-      &:nth-child(odd){
+      &:nth-child(odd) {
         background-color: $darkgreen;
       }
-      .bName{
+      .bName {
         position: relative;
         font-size: 2em;
-//        top: 5px;
         left: 15px;
         float: left;
       }
-//      .dDate {
-//        font-size: 1.3em;
-//        position: relative;
-//        color: $offwhite;
-//        font-weight: 300;
+      .dDate {
+        font-size: 1.3em;
+        position: relative;
+        color: $offwhite;
+        font-weight: 300;
 //        left: -165px;
-//        float: left;
-//        top: 50px;
-//      }
+        float: left;
+        top: 50px;
+      }
       .bAmount {
         position: relative;
         float: right;
         font-size: 2em;
-//        top: 15px;
         right: 10px;
         font-weight: 700;
       }
     }
   }
 }
-#addView{
-  background-color: $darkgreen;
-}
-#paidView{
-  background-color: $lightblue;
-  .paidList{
-    list-style: none;
-    width: 100%;
-    color: $offwhite;
-    li{
-      background-color: $lightblue;
-      padding: 20px 10px 10px;
-      min-height: 75px;
-      &:nth-child(odd){
-        background-color: $darkblue;
 
+#addView {
+  background-color: $darkgreen;
+  #addContent {
+    width: 90%;
+    margin: 40px auto 0 auto;
+    padding-bottom: 90px;
+    text-align: center;
+    overflow: scroll;
+    #addBill {
+      font-size: 1.5em;
+      font-weight: 300;
+      .formGroup {
+        padding: 10px;
+      }
+      label {
+        display: inline-block;
+        margin-right: 10px;
+        width: 30%;
+      }
+      input {
+        font-size: .9em;
+        border-radius: 5px;
+        width: 60%;
+        color: $darkblue;
+        border: none;
+      }
+      button{
+        background-color: $offwhite;
+        color: $darkblue;
+        padding: 5px 10px;
+        font-weight: 700;
+        font-size: .6em;
+        border: none;
+        border-radius: 5px;
       }
     }
   }
 }
-@media only screen and (max-width: 500px), only screen and (max-device-width: 500px){
+
+#paidView {
+  background-color: $lightblue;
+  .paidList {
+    list-style: none;
+    width: 100%;
+    overflow: scroll;
+    li {
+      background-color: $lightblue;
+      padding: 20px 10px 10px;
+      min-height: 75px;
+      color: $offwhite;
+      .overdue {
+        background-color: $overdue;
+      }
+      &:nth-child(odd) {
+        background-color: $darkblue;
+      }
+      .bName {
+        position: relative;
+        font-size: 2em;
+        //        top: 5px;
+        left: 15px;
+        float: left;
+      }
+            .dDate {
+              font-size: 1.3em;
+              position: relative;
+              color: $offwhite;
+              font-weight: 300;
+              left: -165px;
+              float: left;
+              top: 50px;
+            }
+      .bAmount {
+        position: relative;
+        float: right;
+        font-size: 2em;
+        right: 10px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
 
 }

@@ -9,6 +9,16 @@
         {   "billname"   : "Hulu",  "duedate" : "March 9",        "amount"    : "10"        },
         {   "billname"   : "Electric", "duedate" : "March 9",         "amount"    : "68"        }
 
+    ],
+    "paid": [
+
+        {   "billname"   : "Credit Card", "paiddate" : "March 9",         "amount"    : "123"        },
+        {   "billname"   : "Hulu",  "paiddate" : "March 9",        "amount"    : "10"        },
+        {   "billname"   : "Electric", "paiddate" : "March 9",         "amount"    : "68"        },
+        {   "billname"   : "Credit Card", "paiddate" : "March 9",         "amount"    : "123"        },
+        {   "billname"   : "Hulu",  "paiddate" : "March 9",        "amount"    : "10"        },
+        {   "billname"   : "Electric", "paiddate" : "March 9",         "amount"    : "68"        }
+
     ]
 
 }

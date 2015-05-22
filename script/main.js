@@ -1,4 +1,5 @@
 var mainBillList = "#homeView #list";
+var paidBillList = "#paidView #paidBills";
 $(document).ready(function () {
     $.getJSON("data/data.json").done(function (data) {
 
@@ -8,6 +9,14 @@ $(document).ready(function () {
 
             $(mainBillList).append(
                 "<li><span class='bName'>" + value.billname  + "</span><span class='bAmount'>$" + value.amount +
+                    "</span></li>"
+            );
+
+        });
+        $.each(data.paid, function (index, value) {
+
+            $(paidBillList).append(
+                "<li><span class='bName'>" + value.billname  + "</span><span class='paiddate'>" + value.paiddate + "</span><span class='bAmount'>$" + value.amount +
                     "</span></li>"
             );
 
@@ -27,6 +36,13 @@ $(document).ready(function () {
                 );
 
             });
+            $.each(data.paid, function (index, value) {
+
+                $(paidBillList).append(
+                    "<li><span class='bName'>" + value.billname  + "</span><span class='paiddate'>" + value.paiddate + "</span><span class='bAmount'>$" + value.amount + "</span></li>"
+                );
+
+            });
 
         }
 
@@ -37,19 +53,20 @@ $(document).ready(function () {
 function init() {
     setBindings();
 }
-function saveBill(data) {
-    var temp = [];
-    temp = JSON.parse(localStorage.getItem('bills'));
-    temp.push(data);
-    console.log(temp);
-    localStorage.setItem('bills', JSON.stringify(temp));
-
-    loadBills();
-}
+//function saveBill(data) {
+//    var temp = [];
+//    temp = JSON.parse(localStorage.getItem('bills'));
+//    temp.push(data);
+//    console.log(temp);
+//    localStorage.setItem('bills', JSON.stringify(temp));
+//
+//    loadBills();
+//}
 
 function loadBills() {
     var storedBills = JSON.parse(localStorage.getItem('data'));
     var bills = storedBills.bills;
+    var paid = storedBills.paid;
 
     $(mainBillList).html('');
 
@@ -60,6 +77,14 @@ function loadBills() {
         });
     } else {
         $(mainBillList).append('<li>No Bills</li>');
+    }
+    if (paid.length > 0) {
+        paid.forEach(function (paidBill) {
+            $(paidBillList).append("<li><span class='bName'>" + paid.billname + "</span><span class='bAmount'>$" + paid.amount +
+                "</span></li>");
+        });
+    } else {
+        $(paidBillList).append('<li>No Paid Bill History</li>');
     }
 }
 function setBindings(){

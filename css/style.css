@@ -34,11 +34,11 @@ header {
       display: table;
       clear: both; }
     header nav ul li {
-      width: 33.333333%;
+      width: 25%;
       list-style: none;
       display: table-cell;
       text-align: center;
-      padding: 0 5%; }
+      padding: 0 10%; }
       header nav ul li i {
         color: #273c41;
         font-size: 250%; }
@@ -60,7 +60,10 @@ header {
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 0 0 10px; }
+  padding: 0 0 90px; }
+  .view h1 {
+    margin-bottom: 20px;
+    text-transform: uppercase; }
 
 .activeView {
   left: 0; }
@@ -82,6 +85,13 @@ header {
       font-size: 2em;
       left: 15px;
       float: left; }
+    #homeView .billList li .dDate {
+      font-size: 1.3em;
+      position: relative;
+      color: #e9e9dd;
+      font-weight: 300;
+      float: left;
+      top: 50px; }
     #homeView .billList li .bAmount {
       position: relative;
       float: right;
@@ -91,18 +101,69 @@ header {
 
 #addView {
   background-color: #5e9e75; }
+  #addView #addContent {
+    width: 90%;
+    margin: 40px auto 0 auto;
+    padding-bottom: 90px;
+    text-align: center;
+    overflow: scroll; }
+    #addView #addContent #addBill {
+      font-size: 1.5em;
+      font-weight: 300; }
+      #addView #addContent #addBill .formGroup {
+        padding: 10px; }
+      #addView #addContent #addBill label {
+        display: inline-block;
+        margin-right: 10px;
+        width: 30%; }
+      #addView #addContent #addBill input {
+        font-size: .9em;
+        border-radius: 5px;
+        width: 60%;
+        color: #273c41;
+        border: none; }
+      #addView #addContent #addBill button {
+        background-color: #e9e9dd;
+        color: #273c41;
+        padding: 5px 10px;
+        font-weight: 700;
+        font-size: .6em;
+        border: none;
+        border-radius: 5px; }
 
 #paidView {
   background-color: #78bfb6; }
   #paidView .paidList {
     list-style: none;
     width: 100%;
-    color: #e9e9dd; }
+    overflow: scroll; }
     #paidView .paidList li {
       background-color: #78bfb6;
       padding: 20px 10px 10px;
-      min-height: 75px; }
+      min-height: 75px;
+      color: #e9e9dd; }
+      #paidView .paidList li .overdue {
+        background-color: #cd8583; }
       #paidView .paidList li:nth-child(odd) {
         background-color: #273c41; }
+      #paidView .paidList li .bName {
+        position: relative;
+        font-size: 2em;
+        left: 15px;
+        float: left; }
+      #paidView .paidList li .dDate {
+        font-size: 1.3em;
+        position: relative;
+        color: #e9e9dd;
+        font-weight: 300;
+        left: -165px;
+        float: left;
+        top: 50px; }
+      #paidView .paidList li .bAmount {
+        position: relative;
+        float: right;
+        font-size: 2em;
+        right: 10px;
+        font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */
