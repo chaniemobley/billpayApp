@@ -17,8 +17,7 @@ $(document).ready(function () {
         $.each(data.paid, function (index, value) {
 
             $(paidBillList).append(
-                "<li><span class='bName'>" + value.billname  + "</span><span class='paiddate'>" + value.paiddate + "</span><span class='bAmount'>$" + value.amount +
-                    "</span></li>"
+                "<li><span class='bName'>" + value.billname  + "</span><span class='paiddate'>paid " + value.paiddate + "</span><span class='bAmount'>$" + value.amount + "</span></li>"
             );
 
         });
@@ -40,7 +39,7 @@ $(document).ready(function () {
             $.each(data.paid, function (index, value) {
 
                 $(paidBillList).append(
-                    "<li><span class='bName'>" + value.billname  + "</span><span class='paiddate'>" + value.paiddate + "</span><span class='bAmount'>$" + value.amount + "</span></li>"
+                    "<li><span class='bName'>" + value.billname  + "</span><span class='paiddate'>paid " + value.paiddate + "</span><span class='bAmount'>$" + value.amount + "</span></li>"
                 );
 
             });
@@ -81,8 +80,7 @@ function loadBills() {
     }
     if (paid.length > 0) {
         paid.forEach(function (paidBill) {
-            $(paidBillList).append("<li><span class='bName'>" + paid.billname + "</span><span class='bAmount'>$" + paid.amount +
-                "</span></li>");
+            $(paidBillList).append("<li><span class='bName'>" + value.billname  + "</span><span class='paiddate'>paid " + value.paiddate + "</span><span class='bAmount'>$" + value.amount + "</span></li>");
         });
     } else {
         $(paidBillList).append('<li>No Paid Bill History</li>');

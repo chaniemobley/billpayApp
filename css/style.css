@@ -75,7 +75,8 @@ header {
   #homeView .billList li {
     background-color: #83cd9f;
     padding: 20px 10px 10px;
-    min-height: 75px; }
+    min-height: 80px;
+    position: relative; }
     #homeView .billList li:after {
       content: "";
       display: table;
@@ -85,23 +86,23 @@ header {
     #homeView .billList li:nth-child(odd) {
       background-color: #5e9e75; }
     #homeView .billList li .bName {
-      position: relative;
+      position: absolute;
       font-size: 2em;
       left: 15px;
       float: left; }
     #homeView .billList li .bDate {
       font-size: 1.3em;
-      position: relative;
-      color: #e9e9dd;
-      font-weight: 300;
-      left: -165px;
-      float: left;
-      top: 50px; }
+      font-family: 'Roboto Slab', serif;
+      position: absolute;
+      font-weight: 100;
+      right: 15px;
+      float: right;
+      top: 70px; }
     #homeView .billList li .bAmount {
-      position: relative;
+      position: absolute;
       float: right;
       font-size: 2em;
-      right: 10px;
+      right: 15px;
       font-weight: 700; }
 
 #addView {
@@ -149,31 +150,33 @@ header {
     #paidView .paidList li {
       background-color: #78bfb6;
       padding: 20px 10px 10px;
-      min-height: 75px;
-      color: #e9e9dd; }
+      min-height: 80px;
+      color: #FEFEFE;
+      position: relative; }
       #paidView .paidList li .overdue {
         background-color: #cd8583; }
       #paidView .paidList li:nth-child(odd) {
         background-color: #273c41; }
       #paidView .paidList li .bName {
-        position: relative;
+        position: absolute;
         font-size: 2em;
         left: 15px;
         float: left; }
-      #paidView .paidList li .dDate {
+      #paidView .paidList li .paiddate {
         font-size: 1.3em;
-        position: relative;
+        font-family: 'Roboto Slab', serif;
+        position: absolute;
         color: #e9e9dd;
-        font-weight: 300;
-        left: -165px;
-        float: left;
-        top: 50px; }
+        font-weight: 100;
+        left: 15px;
+        float: right;
+        top: 70px; }
       #paidView .paidList li .bAmount {
-        position: relative;
+        position: absolute;
         float: right;
         font-size: 2em;
-        right: 10px;
-        font-weight: 700; }
+        right: 15px;
+        font-weight: 400; }
 
 #contactView #contactContent .col1 {
   width: 50%;
@@ -208,7 +211,7 @@ header {
     width: 100%;
     color: #273c41;
     border: none;
-    min-height: 50px;
+    min-height: 90px;
     display: block; }
   #contactView #contactContent .col2 button {
     background-color: #e9e9dd;
@@ -217,7 +220,8 @@ header {
     font-weight: 700;
     font-size: .6em;
     border: none;
-    border-radius: 5px; }
+    border-radius: 5px;
+    margin-left: 10px; }
 
 @media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
   #contactView #contactContent .col1, #contactView #contactContent .col2 {

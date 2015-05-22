@@ -2,6 +2,7 @@
 $darkgreen: #5e9e75;
 $lightgreen: #83cd9f;
 $offwhite: #e9e9dd;
+$softwhite: #FEFEFE;
 $darkblue: #273c41;
 $lightblue: #78bfb6;
 $overdue: #cd8583;
@@ -101,7 +102,8 @@ header {
     li {
       background-color: $lightgreen;
       padding: 20px 10px 10px;
-      min-height: 75px;
+      min-height: 80px;
+      position: relative;
       @include clearfix;
       .overdue {
         background-color: $overdue;
@@ -110,25 +112,25 @@ header {
         background-color: $darkgreen;
       }
       .bName {
-        position: relative;
+        position: absolute;
         font-size: 2em;
         left: 15px;
         float: left;
       }
       .bDate {
         font-size: 1.3em;
-        position: relative;
-        color: $offwhite;
-        font-weight: 300;
-        left: -165px;
-        float: left;
-        top: 50px;
+        font-family: 'Roboto Slab', serif;
+        position: absolute;
+        font-weight: 100;
+        right: 15px;
+        float: right;
+        top: 70px;
       }
       .bAmount {
-        position: relative;
+        position: absolute;
         float: right;
         font-size: 2em;
-        right: 10px;
+        right: 15px;
         font-weight: 700;
       }
     }
@@ -161,7 +163,7 @@ header {
         color: $darkblue;
         border: none;
       }
-      button{
+      button {
         background-color: $offwhite;
         color: $darkblue;
         padding: 5px 10px;
@@ -184,8 +186,9 @@ header {
     li {
       background-color: $lightblue;
       padding: 20px 10px 10px;
-      min-height: 75px;
-      color: $offwhite;
+      min-height: 80px;
+      color: $softwhite;
+      position: relative;
       .overdue {
         background-color: $overdue;
       }
@@ -193,34 +196,35 @@ header {
         background-color: $darkblue;
       }
       .bName {
-        position: relative;
+        position: absolute;
         font-size: 2em;
-        //        top: 5px;
         left: 15px;
         float: left;
       }
-            .dDate {
-              font-size: 1.3em;
-              position: relative;
-              color: $offwhite;
-              font-weight: 300;
-              left: -165px;
-              float: left;
-              top: 50px;
-            }
+      .paiddate {
+        font-size: 1.3em;
+        font-family: 'Roboto Slab', serif;
+        position: absolute;
+        color: $offwhite;
+        font-weight: 100;
+        left: 15px;
+        float: right;
+        top: 70px;
+      }
       .bAmount {
-        position: relative;
+        position: absolute;
         float: right;
         font-size: 2em;
-        right: 10px;
-        font-weight: 700;
+        right: 15px;
+        font-weight: 400;
       }
     }
   }
 }
-#contactView{
-  #contactContent{
-    .col1{
+
+#contactView {
+  #contactContent {
+    .col1 {
       width: 50%;
       float: left;
       padding: 20px;
@@ -228,9 +232,9 @@ header {
       margin: 0 auto;
       text-align: center;
     }
-    .col2{
+    .col2 {
       width: 50%;
-      float:right;
+      float: right;
       padding: 20px;
       box-sizing: border-box;
       font-size: 1.5em;
@@ -251,16 +255,16 @@ header {
         border: none;
         display: block
       }
-      textarea{
+      textarea {
         font-size: .9em;
         border-radius: 5px;
         width: 100%;
         color: $darkblue;
         border: none;
-        min-height: 50px;
+        min-height: 90px;
         display: block
       }
-      button{
+      button {
         background-color: $offwhite;
         color: $darkblue;
         padding: 5px 10px;
@@ -268,14 +272,16 @@ header {
         font-size: .6em;
         border: none;
         border-radius: 5px;
+        margin-left: 10px;
       }
     }
   }
 }
+
 @media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
-  #contactView{
-    #contactContent{
-      .col1, .col2{
+  #contactView {
+    #contactContent {
+      .col1, .col2 {
         width: 100%;
         float: none;
       }
