@@ -157,12 +157,12 @@ header {
       }
       input {
         font-size: .9em;
+        display: inline;
         border-radius: 5px;
-        width: 60%;
+        width: 50%;
         color: $darkblue;
         border: none;
         padding: 8px;
-        display: inline;
       }
       button {
         background-color: $offwhite;

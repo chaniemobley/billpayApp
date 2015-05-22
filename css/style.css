@@ -123,12 +123,12 @@ header {
         width: 30%; }
       #addView #addContent #addBill input {
         font-size: .9em;
+        display: inline;
         border-radius: 5px;
-        width: 60%;
+        width: 50%;
         color: #273c41;
         border: none;
-        padding: 8px;
-        display: inline; }
+        padding: 8px; }
       #addView #addContent #addBill button {
         background-color: #e9e9dd;
         color: #273c41;
