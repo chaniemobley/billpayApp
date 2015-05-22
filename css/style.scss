@@ -102,6 +102,7 @@ header {
       background-color: $lightgreen;
       padding: 20px 10px 10px;
       min-height: 75px;
+      @include clearfix;
       .overdue {
         background-color: $overdue;
       }
@@ -114,12 +115,12 @@ header {
         left: 15px;
         float: left;
       }
-      .dDate {
+      .bDate {
         font-size: 1.3em;
         position: relative;
         color: $offwhite;
         font-weight: 300;
-//        left: -165px;
+        left: -165px;
         float: left;
         top: 50px;
       }
@@ -179,6 +180,7 @@ header {
     list-style: none;
     width: 100%;
     overflow: scroll;
+    @include clearfix;
     li {
       background-color: $lightblue;
       padding: 20px 10px 10px;
@@ -223,6 +225,8 @@ header {
       float: left;
       padding: 20px;
       box-sizing: border-box;
+      margin: 0 auto;
+      text-align: center;
     }
     .col2{
       width: 50%;
@@ -242,17 +246,19 @@ header {
       input {
         font-size: .9em;
         border-radius: 5px;
-        width: 90%;
+        width: 100%;
         color: $darkblue;
         border: none;
+        display: block
       }
       textarea{
         font-size: .9em;
         border-radius: 5px;
-        width: 90%;
+        width: 100%;
         color: $darkblue;
         border: none;
         min-height: 50px;
+        display: block
       }
       button{
         background-color: $offwhite;

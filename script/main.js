@@ -9,8 +9,9 @@ $(document).ready(function () {
 
             $(mainBillList).append(
                 "<li><span class='bName'>" + value.billname  + "</span><span class='bAmount'>$" + value.amount +
-                    "</span></li>"
+                    "</span>" + "<span class='bDate'>due " + value.duedate + "</span></li>"
             );
+
 
         });
         $.each(data.paid, function (index, value) {
@@ -32,7 +33,7 @@ $(document).ready(function () {
 
                 $(mainBillList).append(
                     "<li><span class='bName'>" + value.billname  + "</span><span class='bAmount'>$" + value.amount +
-                        "</span></li>"
+                        "</span>" + "<span class='bDate'>due " + value.duedate + "</span></li>"
                 );
 
             });
@@ -72,8 +73,8 @@ function loadBills() {
 
     if (bills.length > 0) {
         bills.forEach(function (bill) {
-            $(mainBillList).append("<li><span class='bName'>" + bill.billname + "</span><span class='bAmount'>$" + bill.amount +
-                "</span></li>");
+            $(mainBillList).append("<li><span class='bName'>" + value.billname  + "</span><span class='bAmount'>$" + value.amount +
+                "</span>" + "<span class='bDate'>due " + value.duedate + "</span></li>");
         });
     } else {
         $(mainBillList).append('<li>No Bills</li>');

@@ -76,6 +76,10 @@ header {
     background-color: #83cd9f;
     padding: 20px 10px 10px;
     min-height: 75px; }
+    #homeView .billList li:after {
+      content: "";
+      display: table;
+      clear: both; }
     #homeView .billList li .overdue {
       background-color: #cd8583; }
     #homeView .billList li:nth-child(odd) {
@@ -85,11 +89,12 @@ header {
       font-size: 2em;
       left: 15px;
       float: left; }
-    #homeView .billList li .dDate {
+    #homeView .billList li .bDate {
       font-size: 1.3em;
       position: relative;
       color: #e9e9dd;
       font-weight: 300;
+      left: -165px;
       float: left;
       top: 50px; }
     #homeView .billList li .bAmount {
@@ -137,6 +142,10 @@ header {
     list-style: none;
     width: 100%;
     overflow: scroll; }
+    #paidView .paidList:after {
+      content: "";
+      display: table;
+      clear: both; }
     #paidView .paidList li {
       background-color: #78bfb6;
       padding: 20px 10px 10px;
@@ -170,7 +179,9 @@ header {
   width: 50%;
   float: left;
   padding: 20px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center; }
 #contactView #contactContent .col2 {
   width: 50%;
   float: right;
@@ -187,16 +198,18 @@ header {
   #contactView #contactContent .col2 input {
     font-size: .9em;
     border-radius: 5px;
-    width: 90%;
+    width: 100%;
     color: #273c41;
-    border: none; }
+    border: none;
+    display: block; }
   #contactView #contactContent .col2 textarea {
     font-size: .9em;
     border-radius: 5px;
-    width: 90%;
+    width: 100%;
     color: #273c41;
     border: none;
-    min-height: 50px; }
+    min-height: 50px;
+    display: block; }
   #contactView #contactContent .col2 button {
     background-color: #e9e9dd;
     color: #273c41;
