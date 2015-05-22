@@ -48,7 +48,9 @@ function saveBill(data) {
 }
 
 function loadBills() {
-    var bills = JSON.parse(localStorage.getItem('bills'));
+    var storedBills = JSON.parse(localStorage.getItem('data'));
+    var bills = storedBills.bills;
+
     $(mainBillList).html('');
 
     if (bills.length > 0) {

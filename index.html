@@ -10,16 +10,7 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><i class="fa fa-home fa-2x" id="home"></i></li>
-            <li><i class="fa fa-plus fa-2x" id="add"></i></li>
-            <li><i class="fa fa-check fa-2x" id="paid"></i></li>
-        </ul>
-    </nav>
-</header>
-<div class="view" id="homeView">
+<div class="view activeView" id="homeView">
         <ul class="billList" id="list"></ul>
 </div>
 <div class="view" id="addView">
@@ -39,8 +30,21 @@ ADD
     </div>
 </div>
 <div class="view" id="detailView">
-
+    <div id="billDetail">
+        Detail of clicked bill
+    </div>
 </div>
+
+<header>
+    <nav>
+        <ul>
+            <li><i class="fa fa-home fa-2x" id="home"></i></li>
+            <li><i class="fa fa-plus fa-2x" id="add"></i></li>
+            <li><i class="fa fa-check fa-2x" id="paid"></i></li>
+        </ul>
+    </nav>
+</header>
+
 <script src="script/jquery.min.js"></script>
 <script src="script/jquery.transit.js"></script>
 <script src="script/inobounce.min.js"></script>
