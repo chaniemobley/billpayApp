@@ -126,7 +126,8 @@ header {
         border-radius: 5px;
         width: 60%;
         color: #273c41;
-        border: none; }
+        border: none;
+        padding: 8px; }
       #addView #addContent #addBill button {
         background-color: #e9e9dd;
         color: #273c41;
@@ -204,7 +205,8 @@ header {
     width: 100%;
     color: #273c41;
     border: none;
-    display: block; }
+    display: block;
+    padding: 8px; }
   #contactView #contactContent .col2 textarea {
     font-size: .9em;
     border-radius: 5px;
@@ -212,7 +214,8 @@ header {
     color: #273c41;
     border: none;
     min-height: 90px;
-    display: block; }
+    display: block;
+    padding: 8px; }
   #contactView #contactContent .col2 button {
     background-color: #e9e9dd;
     color: #273c41;

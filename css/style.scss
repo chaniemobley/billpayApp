@@ -161,6 +161,7 @@ header {
         width: 60%;
         color: $darkblue;
         border: none;
+        padding: 8px;
       }
       button {
         background-color: $offwhite;
@@ -253,7 +254,8 @@ header {
         width: 100%;
         color: $darkblue;
         border: none;
-        display: block
+        display: block;
+        padding: 8px;
       }
       textarea {
         font-size: .9em;
@@ -262,7 +264,8 @@ header {
         color: $darkblue;
         border: none;
         min-height: 90px;
-        display: block
+        display: block;
+        padding: 8px;
       }
       button {
         background-color: $offwhite;
