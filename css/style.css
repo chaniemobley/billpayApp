@@ -34,7 +34,7 @@ header {
       display: table;
       clear: both; }
     header nav ul li {
-      width: 25%;
+      width: 20%;
       list-style: none;
       display: table-cell;
       text-align: center;
@@ -183,7 +183,8 @@ header {
   padding: 20px;
   box-sizing: border-box;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.8em; }
 #contactView #contactContent .col2 {
   width: 50%;
   float: right;

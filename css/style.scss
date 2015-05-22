@@ -52,7 +52,7 @@ header {
     display: table;
     @include clearfix;
     ul li {
-      width: 25%;
+      width: 20%;
       list-style: none;
       display: table-cell;
       text-align: center;
@@ -230,6 +230,7 @@ header {
       box-sizing: border-box;
       margin: 0 auto;
       text-align: center;
+      font-size: 1.8em;
     }
     .col2 {
       width: 50%;
