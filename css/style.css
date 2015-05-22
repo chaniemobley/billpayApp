@@ -118,7 +118,7 @@ header {
       #addView #addContent #addBill .formGroup {
         padding: 10px; }
       #addView #addContent #addBill label {
-        display: inline-block;
+        display: inline;
         margin-right: 10px;
         width: 30%; }
       #addView #addContent #addBill input {
@@ -127,7 +127,8 @@ header {
         width: 60%;
         color: #273c41;
         border: none;
-        padding: 8px; }
+        padding: 8px;
+        display: inline; }
       #addView #addContent #addBill button {
         background-color: #e9e9dd;
         color: #273c41;
